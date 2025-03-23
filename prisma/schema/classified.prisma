@@ -72,7 +72,7 @@ enum Colour {
     BLACK
     BLUE
     BROWN
-    GLOD
+    GOLD
     GREY
     ORANGE
     PINK
@@ -81,6 +81,7 @@ enum Colour {
     SILVER
     WHITE
     YELLOW
+    GREEN
 }
 
 enum ULEZCompliance {
