@@ -1,16 +1,12 @@
 import { routes } from "@/config/routes";
+import { ClassifiedWithImages } from "@/config/types";
 import { Prisma } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 
-type ClassifiedWithImage = Prisma.ClassifiedGetPayload<{
-    include: {
-        images: true;
-    };
-}>;
 
 interface ClassifiedCardProps {
-    classified: ClassifiedWithImage;
+    classified: ClassifiedWithImages;
 }
 
 export const ClassifiedCard = (props: ClassifiedCardProps) => {
