@@ -9,6 +9,7 @@ model Customer {
     status CustomerStatus @default(INTERESTED)
     classifedId Int? @map("classified_id")
     classified Classified? @relation(fields: [classifedId], references: [id], onDelete: Cascade)
+    lifecycle CustomerLifecycle[]
     createdAt DateTime @default(now()) @map("created_at")
     updatedAt DateTime @updatedAt @map("updated_at")
     @@map("customers")
