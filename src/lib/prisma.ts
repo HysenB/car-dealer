@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension";
+import { PrismaClient } from "@prisma/client";
 
 const globalFormPrisma = global as unknown as { prisma: PrismaClient }
 function makeClient() {
